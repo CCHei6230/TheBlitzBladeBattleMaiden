@@ -96,6 +96,7 @@ MK Toon - Stylized Shader
 https://assetstore.unity.com/packages/vfx/shaders/mk-toon-stylized-shader-178415
 
 Vefects
+
 https://assetstore.unity.com/packages/vfx/stylized-fire-urp-355834
 
 https://assetstore.unity.com/packages/vfx/particles/spells/zap-vfx-urp-303479
