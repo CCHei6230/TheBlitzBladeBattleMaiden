@@ -1,5 +1,5 @@
 using UnityEngine;
-
+ 
 // プレイヤーが攻撃できる対象であることを示すインターフェース。
 // このインターフェースを実装したオブジェクトは PlayerAttack の当たり判定に反応する。
 // EnemyPropertyBase・EnemyAttackHealItem などが実装している。
