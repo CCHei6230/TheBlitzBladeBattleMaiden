@@ -234,7 +234,7 @@ public class EnemyFlyingEyeBallState_AttackState : EnemyStateBase
                                     tmp_attack=    GameObject.Instantiate(EnemyProperty. attackPrefab,EnemyProperty.modelObject.transform.position,EnemyProperty.modelObject.transform.rotation);
                                 }
 
-                                tmp_attack.GetComponentInChildren<iDamageable>().Spawner = EnemyProperty.ModleTransform;
+                                tmp_attack.GetComponentInChildren<IDamageable>().Spawner = EnemyProperty.ModleTransform;
                                 // プレイヤーとの距離に応じてステート遷移
                                 nextState = EnemySharedMethods.PlayerInDetectDistance(EnemyProperty, this);
                             }

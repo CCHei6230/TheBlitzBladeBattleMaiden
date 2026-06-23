@@ -215,7 +215,7 @@ public class PlayerState_DashState : PlayerStateBase
     public override void TriggerEnterEvent(Collider other)
     {
         // パリィ可能なオブジェクトを取得
-        playerProperty.objectCanParry  = other.GetComponent<iDamageable>();
+        playerProperty.objectCanParry  = other.GetComponent<IDamageable>();
         if (playerProperty.objectCanParry != null) 
         {   
             // ダメージ位置を更新
@@ -232,7 +232,7 @@ public class PlayerState_DashState : PlayerStateBase
     public override void TriggerStayEvent(Collider other)
     {
         // パリィ可能なオブジェクトを取得
-        playerProperty.objectCanParry  = other.GetComponent<iDamageable>();
+        playerProperty.objectCanParry  = other.GetComponent<IDamageable>();
         if (playerProperty.objectCanParry != null) 
         {   
             // ダメージ位置を更新

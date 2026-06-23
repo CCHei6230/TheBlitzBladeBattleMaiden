@@ -85,7 +85,7 @@ public class PlayerWarpAttackManager : MonoBehaviour
             Vector3 direction = playerProperty.cameraTransform.forward;
             if (Physics.Raycast(origin, direction,out hit,150))
             {
-                iTaggableObject tmp_tagObj = hit.transform.GetComponentInParent<iTaggableObject>();
+                ITaggableObject tmp_tagObj = hit.transform.GetComponentInParent<ITaggableObject>();
 
                 // タグ可能なオブジェクトを探知した場合
                 if(tmp_tagObj != null)

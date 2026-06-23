@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 // ワープ攻撃の中継点となるオブジェクト。
-// iTaggableObject を継承しており、ワープ攻撃のロックオン対象として機能する。
+// ITaggableObject を継承しており、ワープ攻撃のロックオン対象として機能する。
 // TriggerableObject を継承しており、Trigger() で起動・中止が可能。
-public class AnchorObject : TriggerableObject ,iTaggableObject
+public class AnchorObject : TriggerableObject ,ITaggableObject
 {
     // 表示用の 3D モデルオブジェクト
     [FormerlySerializedAs("modleObject")]
@@ -60,7 +60,7 @@ public class AnchorObject : TriggerableObject ,iTaggableObject
         return int.MaxValue;
     }
 
-    // モデルの Transform を返すプロパティ（iTaggableObject インターフェースの実装）
+    // モデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
     public Transform ModleTransform
     {
         get => modelObject.transform;

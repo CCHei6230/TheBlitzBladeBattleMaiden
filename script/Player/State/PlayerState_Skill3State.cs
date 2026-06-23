@@ -133,7 +133,7 @@ public class PlayerState_Skill3State : PlayerStateBase
             if (playerProperty.skill3Count != -1)
             {
                 // ダメージオブジェクトを取得
-                var  tmp_damage = other.GetComponentInParent<iDamageable>();
+                var  tmp_damage = other.GetComponentInParent<IDamageable>();
                 // ダメージオブジェクトが存在している場合
                 if (tmp_damage != null)
                 {

@@ -135,7 +135,7 @@ public class PlayerState_DamageState : PlayerStateBase
 
     public override void TriggerEnterEvent(Collider other)
     {
-        playerProperty.objectCanParry  = other.GetComponentInParent<iDamageable>();
+        playerProperty.objectCanParry  = other.GetComponentInParent<IDamageable>();
         if (playerProperty.objectCanParry != null)
         {
             playerProperty.damagePosition = playerProperty.objectCanParry .Transform.position;
@@ -146,7 +146,7 @@ public class PlayerState_DamageState : PlayerStateBase
 
     public override void TriggerStayEvent(Collider other)
     {
-        playerProperty.objectCanParry  = other.GetComponentInParent<iDamageable>();
+        playerProperty.objectCanParry  = other.GetComponentInParent<IDamageable>();
         if (playerProperty.objectCanParry != null)
         {
             playerProperty.damagePosition = playerProperty.objectCanParry .Transform.position;

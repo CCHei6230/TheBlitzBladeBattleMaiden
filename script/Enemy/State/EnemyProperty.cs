@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 // エネミープロパティの基本クラス
-public abstract class EnemyPropertyBase : MonoBehaviour, iAttackable
+public abstract class EnemyPropertyBase : MonoBehaviour, IAttackable
 {
     // モデル
     public GameObject modelObject;

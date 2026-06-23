@@ -191,7 +191,7 @@ public abstract class PlayerStateSharedMethods
     public static StateBase TakeDamage(PlayerProperty _playerProperty,Collider _other, StateBase _state)
     {
         // ダメージインターフェースを取得
-        var  tmp_damage = _other.GetComponentInParent<iDamageable>();
+        var  tmp_damage = _other.GetComponentInParent<IDamageable>();
         if (tmp_damage != null)
         {
             // 受けたダメージ量を設定

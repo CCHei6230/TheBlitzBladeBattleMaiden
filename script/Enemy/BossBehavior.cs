@@ -3,9 +3,9 @@ using DG.Tweening;
 using UnityEngine;
 
 
-// iTaggableObject を実装しており、プレイヤーのワープ攻撃の対象となる。
+// ITaggableObject を実装しており、プレイヤーのワープ攻撃の対象となる。
 // TriggerableObject を継承しており、外部から Trigger() で起動できる。
-public class BossBehavior : TriggerableObject, iTaggableObject
+public class BossBehavior : TriggerableObject, ITaggableObject
 {
     // ボスのパラメータ・参照を保持するプロパティクラス
     BossProperty _bossProperty;
@@ -42,7 +42,7 @@ public class BossBehavior : TriggerableObject, iTaggableObject
         return _bossProperty.hp - 50 * (_atkLv + 1);
     }
 
-    // ボスのモデルの Transform を返すプロパティ（iTaggableObject インターフェースの実装）
+    // ボスのモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
     public Transform ModleTransform { get => _bossProperty.ModleTransform; }
 
     private void Awake()

@@ -36,10 +36,10 @@ public class PlayerState_HeavyAttackState: PlayerStateBase
                 // 付近の敵をサーチしてその敵に向く
                 playerProperty.modelObject.transform.DOComplete();
                 Collider[] tmp_col = Physics.OverlapSphere(playerProperty.modelObject.transform.position, 25);
-               List<iAttackable> tmp_hittedEnemy  = new List<iAttackable>();
+               List<IAttackable> tmp_hittedEnemy  = new List<IAttackable>();
                foreach (var col in tmp_col)
                {
-                   col.TryGetComponent(out iAttackable tmp_attackable);
+                   col.TryGetComponent(out IAttackable tmp_attackable);
                    if (tmp_attackable !=null)
                    {
                        tmp_hittedEnemy.Add(tmp_attackable);
@@ -49,7 +49,7 @@ public class PlayerState_HeavyAttackState: PlayerStateBase
                 {
                     float nearestDistance = 25f;
                     float tmp_distance = 0;
-                    iAttackable tmp_nearestEnemycol = null;
+                    IAttackable tmp_nearestEnemycol = null;
                     foreach (var enemyCol in tmp_hittedEnemy)
                     {
                         tmp_distance = Vector2.Distance(

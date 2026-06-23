@@ -2,8 +2,8 @@ using Unity.Mathematics;
 using UnityEngine;
 
 // 敵の通常攻撃オブジェクトの基底クラス。
-// Projectiles を継承した発射物であり、iDamageable インターフェースを実装してプレイヤーにダメージを与える。
-public class EnemyAttack : Projectiles, iDamageable
+// Projectiles を継承した発射物であり、IDamageable インターフェースを実装してプレイヤーにダメージを与える。
+public class EnemyAttack : Projectiles, IDamageable
 {
     // ダメージ量
     [SerializeField] int damage = 10;
@@ -33,10 +33,10 @@ public class EnemyAttack : Projectiles, iDamageable
         }
     }
 
-    // プレイヤーに与えるダメージ量（iDamageable インターフェースの実装）
+    // プレイヤーに与えるダメージ量（IDamageable インターフェースの実装）
     public int Damage { get; set; }
-    // この攻撃を生成したオブジェクトの Transform（iDamageable インターフェースの実装）
+    // この攻撃を生成したオブジェクトの Transform（IDamageable インターフェースの実装）
     public Transform Spawner { get; set; }
-    // この攻撃オブジェクト自身の Transform（iDamageable インターフェースの実装）
+    // この攻撃オブジェクト自身の Transform（IDamageable インターフェースの実装）
     public Transform Transform { get => transform; }
 }

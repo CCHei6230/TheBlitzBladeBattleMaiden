@@ -3,7 +3,7 @@ using UnityEngine;
 // プレイヤーが攻撃できる対象であることを示すインターフェース。
 // このインターフェースを実装したオブジェクトは PlayerAttack の当たり判定に反応する。
 // EnemyPropertyBase・EnemyAttackHealItem などが実装している。
-public interface iAttackable
+public interface IAttackable
 {
     // 対象オブジェクトのモデルの Transform
     public Transform ModleTransform { get; }

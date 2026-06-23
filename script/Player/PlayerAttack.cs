@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 // プレイヤーの攻撃当たり判定を管理するクラス。
-// OnTriggerEnter で iAttackable を実装したオブジェクトに当たった際の処理を行う。
+// OnTriggerEnter で IAttackable を実装したオブジェクトに当たった際の処理を行う。
 public class PlayerAttack : MonoBehaviour
 {
     // プレイヤーの攻撃力（攻撃レベルやスキルによって動的に変更される）
@@ -21,11 +21,11 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    // 当たり判定のコールバック。iAttackable を実装したオブジェクトに触れた際に呼び出される。
+    // 当たり判定のコールバック。IAttackable を実装したオブジェクトに触れた際に呼び出される。
     void OnTriggerEnter(Collider _collider)
     {
-        // 接触したオブジェクトが iAttackable を実装しているか確認する
-        _collider.TryGetComponent(out iAttackable tmp_attackable);
+        // 接触したオブジェクトが IAttackable を実装しているか確認する
+        _collider.TryGetComponent(out IAttackable tmp_attackable);
         if (tmp_attackable != null)
         {
             // ダメージを与える

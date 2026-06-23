@@ -130,7 +130,7 @@ public class PlayerProperty : MonoBehaviour
     // ダメージ時のパリィしたフレーム
     public int parryFrameWhileDamage;
     // パリィ可能なオブジェクト
-    public iDamageable objectCanParry;
+    public IDamageable objectCanParry;
     // パリィ時の前方方向
     [HideInInspector]public Vector3 parryForwardVector;
 

@@ -2,9 +2,9 @@ using UnityEngine;
 using DG.Tweening;
 
 
-// iTaggableObject を実装しており、プレイヤーのワープ攻撃のターゲットとなる。
+// ITaggableObject を実装しており、プレイヤーのワープ攻撃のターゲットとなる。
 // 各フレームで currentState の処理を実行し、返されたステートへの遷移を管理する。
-public class EnemyBehavior : MonoBehaviour, iTaggableObject
+public class EnemyBehavior : MonoBehaviour, ITaggableObject
 {
     // 現在実行中のステート
     StateBase currentState;
@@ -47,7 +47,7 @@ public class EnemyBehavior : MonoBehaviour, iTaggableObject
         return enemyProperty.hp - 50 * (_atkLv + 1);
     }
 
-    // この敵のモデルの Transform を返すプロパティ（iTaggableObject インターフェースの実装）
+    // この敵のモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
     public Transform ModleTransform { get => enemyProperty.modelObject.transform; }
 
     private void Awake()

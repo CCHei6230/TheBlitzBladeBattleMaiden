@@ -2,8 +2,8 @@ using UnityEngine;
 
 // EnemyAttack の派生クラス。
 // プレイヤーに当たった際・パリィされた際・ワープ攻撃された際に、プレイヤーの HP を回復する特殊な攻撃オブジェクト。
-// iTaggableObject を実装しており、ワープ攻撃のターゲットにもなる。
-public class EnemyAttackHealItem : EnemyAttack, iTaggableObject, iAttackable
+// ITaggableObject を実装しており、ワープ攻撃のターゲットにもなる。
+public class EnemyAttackHealItem : EnemyAttack, ITaggableObject, IAttackable
 {
     // ワープ攻撃を受けた際の処理。プレイヤーの HP を回復してエフェクトを再生し、自身を削除する。
     public void BeSlashed(PlayerProperty playerProperty)
@@ -41,10 +41,10 @@ public class EnemyAttackHealItem : EnemyAttack, iTaggableObject, iAttackable
         Destroy(gameObject);
     }
 
-    // このオブジェクトのモデルの Transform を返すプロパティ（iTaggableObject インターフェースの実装）
+    // このオブジェクトのモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
     public Transform ModleTransform { get => transform; }
 
-    // プレイヤーの攻撃が命中した際の処理（iAttackable インターフェースの実装）。
+    // プレイヤーの攻撃が命中した際の処理（IAttackable インターフェースの実装）。
     // プレイヤーの HP を回復し、ワープ攻撃のタグリストから自身を削除して、自身を破棄する。
     public void DealDamage(PlayerAttack _playerAttack)
     {

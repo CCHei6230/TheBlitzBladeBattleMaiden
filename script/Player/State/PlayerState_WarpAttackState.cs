@@ -108,7 +108,7 @@ public class PlayerState_WarpAttackState : PlayerStateBase
                 if (playerProperty.taggedObject[playerProperty.warpAtkObjIndex] )
                 {
                     // タグしたオブジェクトを取得
-                    iTaggableObject tmp_tagObj =   playerProperty.taggedObject[playerProperty.warpAtkObjIndex].GetComponentInParent<iTaggableObject>();
+                    ITaggableObject tmp_tagObj =   playerProperty.taggedObject[playerProperty.warpAtkObjIndex].GetComponentInParent<ITaggableObject>();
                     if (tmp_tagObj != null)
                     {
                         // 敵を倒せるか判定(返り値が0以下で判定する為、敵以外のターゲットは対象外)
@@ -242,7 +242,7 @@ public class PlayerState_WarpAttackState : PlayerStateBase
                     {
                         if (playerProperty.taggedObject[i])
                         {
-                            iTaggableObject tmp_tagObj =   playerProperty.taggedObject[i].GetComponentInParent<iTaggableObject>();
+                            ITaggableObject tmp_tagObj =   playerProperty.taggedObject[i].GetComponentInParent<ITaggableObject>();
                             // ダメージと攻撃レベルアップ判定
                             if(tmp_tagObj.HPAfterBeSlashed(playerProperty.playerAttackLv) <= 0)
                             {
@@ -299,7 +299,7 @@ public class PlayerState_WarpAttackState : PlayerStateBase
             {
                 if (playerProperty.taggedObject[i])
                 {
-                    iTaggableObject tmp_tagObj =   playerProperty.taggedObject[i].GetComponentInParent<iTaggableObject>();
+                    ITaggableObject tmp_tagObj =   playerProperty.taggedObject[i].GetComponentInParent<ITaggableObject>();
                     if (tmp_tagObj != null)
                     {
                         if(tmp_tagObj.HPAfterBeSlashed(playerProperty.playerAttackLv) <= 0)

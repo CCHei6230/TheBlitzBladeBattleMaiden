@@ -150,7 +150,7 @@ public class PlayerState_ParryState  : PlayerStateBase
         // パリィ受付期間内の場合
         if (playerProperty.parryCount < playerProperty.parryCanCountMax)
         {
-            var  tmp_damage = other.GetComponentInParent<iDamageable>();
+            var  tmp_damage = other.GetComponentInParent<IDamageable>();
             if (tmp_damage != null)
             {
                 // 敵をパリィ
