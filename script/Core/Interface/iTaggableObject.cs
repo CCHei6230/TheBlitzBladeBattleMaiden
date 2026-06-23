@@ -10,5 +10,5 @@ public interface ITaggableObject
     // ワープ攻撃命中後のダメージ適用前の HP を返す処理。
     public int HPAfterBeSlashed(int _atkLv);
     // 対象オブジェクトのモデルの Transform
-    public Transform ModleTransform { get; }
+    public Transform ModelTransform { get; }
 }

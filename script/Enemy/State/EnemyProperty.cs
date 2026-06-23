@@ -36,7 +36,7 @@ public abstract class EnemyPropertyBase : MonoBehaviour, IAttackable
     public int waitToSpawnCount = 0;
 
     // モデルのTransformを取得
-    public Transform ModleTransform
+    public Transform ModelTransform
     {
         get => modelObject.transform;
     }

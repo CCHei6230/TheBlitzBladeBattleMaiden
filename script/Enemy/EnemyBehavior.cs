@@ -48,7 +48,7 @@ public class EnemyBehavior : MonoBehaviour, ITaggableObject
     }
 
     // この敵のモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
-    public Transform ModleTransform { get => enemyProperty.modelObject.transform; }
+    public Transform ModelTransform { get => enemyProperty.modelObject.transform; }
 
     private void Awake()
     {

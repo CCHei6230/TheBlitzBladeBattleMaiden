@@ -94,7 +94,7 @@ public class PlayerWarpAttackManager : MonoBehaviour
                     bool tmp_hadBeenLockoned = false;
                     foreach (var lockonedTarget in scopeTaggedList)
                     {
-                        if (lockonedTarget == tmp_tagObj.ModleTransform)
+                        if (lockonedTarget == tmp_tagObj.ModelTransform)
                         {
                             tmp_hadBeenLockoned = true;
                         }
@@ -107,9 +107,9 @@ public class PlayerWarpAttackManager : MonoBehaviour
                         if (scopeTaggedList.Count < taggedObjectList.Count)
                         {
                             // オブジェクトをタグ
-                            TagObject(tmp_tagObj.ModleTransform);
+                            TagObject(tmp_tagObj.ModelTransform);
                             //scopeTaggedListに追加(探知過程に既に探知しタグされた)
-                            scopeTaggedList.Add(tmp_tagObj.ModleTransform);
+                            scopeTaggedList.Add(tmp_tagObj.ModelTransform);
                             // コントローラーを振動させる
                             InputHaptic.instance.Haptic(0,0.01f,2);
                         }

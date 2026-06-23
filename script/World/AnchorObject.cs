@@ -61,7 +61,7 @@ public class AnchorObject : TriggerableObject ,ITaggableObject
     }
 
     // モデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
-    public Transform ModleTransform
+    public Transform ModelTransform
     {
         get => modelObject.transform;
     }

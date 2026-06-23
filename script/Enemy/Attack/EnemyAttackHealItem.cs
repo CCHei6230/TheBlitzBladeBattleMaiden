@@ -42,7 +42,7 @@ public class EnemyAttackHealItem : EnemyAttack, ITaggableObject, IAttackable
     }
 
     // このオブジェクトのモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
-    public Transform ModleTransform { get => transform; }
+    public Transform ModelTransform { get => transform; }
 
     // プレイヤーの攻撃が命中した際の処理（IAttackable インターフェースの実装）。
     // プレイヤーの HP を回復し、ワープ攻撃のタグリストから自身を削除して、自身を破棄する。

@@ -53,7 +53,7 @@ public class PlayerState_HeavyAttackState: PlayerStateBase
                     foreach (var enemyCol in tmp_hittedEnemy)
                     {
                         tmp_distance = Vector2.Distance(
-                            new Vector2(enemyCol.ModleTransform.position.x, enemyCol.ModleTransform.position.z),
+                            new Vector2(enemyCol.ModelTransform.position.x, enemyCol.ModelTransform.position.z),
                             new Vector2(playerProperty.modelObject.transform.position.x,
                                 playerProperty.modelObject.transform.transform.position.z));
                         if (tmp_distance < nearestDistance)
@@ -66,7 +66,7 @@ public class PlayerState_HeavyAttackState: PlayerStateBase
                     if (tmp_nearestEnemycol != null)
                     {
                         playerProperty.modelObject.transform
-                            .DOLookAt(tmp_nearestEnemycol.ModleTransform.position, 0.1f, AxisConstraint.Y)
+                            .DOLookAt(tmp_nearestEnemycol.ModelTransform.position, 0.1f, AxisConstraint.Y)
                             .OnUpdate(() =>
                                 playerProperty.lastForward = playerProperty.modelObject.transform.forward);
                     }

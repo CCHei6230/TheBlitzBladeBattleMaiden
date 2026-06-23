@@ -39,7 +39,7 @@ public class PlayerAttack : MonoBehaviour
             // 集中ゲージを 5 増加させる
             playerProperty.focusCount += 5;
             // ヒットエフェクトを生成
-            Destroy(Instantiate(playerProperty.hitEffect, tmp_attackable.ModleTransform.position, Random.rotation), 2f);
+            Destroy(Instantiate(playerProperty.hitEffect, tmp_attackable.ModelTransform.position, Random.rotation), 2f);
         }
     }
 }

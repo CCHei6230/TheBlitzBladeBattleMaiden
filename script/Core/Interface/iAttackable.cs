@@ -6,7 +6,7 @@ using UnityEngine;
 public interface IAttackable
 {
     // 対象オブジェクトのモデルの Transform
-    public Transform ModleTransform { get; }
+    public Transform ModelTransform { get; }
     // プレイヤーの攻撃が命中した際に呼び出されるダメージ処理
     public void DealDamage(PlayerAttack _playerAttack);
 }

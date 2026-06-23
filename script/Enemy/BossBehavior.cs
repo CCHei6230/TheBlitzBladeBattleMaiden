@@ -43,7 +43,7 @@ public class BossBehavior : TriggerableObject, ITaggableObject
     }
 
     // ボスのモデルの Transform を返すプロパティ（ITaggableObject インターフェースの実装）
-    public Transform ModleTransform { get => _bossProperty.ModleTransform; }
+    public Transform ModelTransform { get => _bossProperty.ModelTransform; }
 
     private void Awake()
     {
