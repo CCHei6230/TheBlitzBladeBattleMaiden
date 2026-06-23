@@ -3,7 +3,7 @@
 Unity  で個人開発した3Dアクション
 
 <p align="center">
-  <img src="Assets/Sprite/LOGO.png" width="700" alt="雷斬ノ刀使">
+  <img src="image/LOGO.png" width="700" alt="雷斬ノ刀使">
 </p>
 
 | | |
@@ -25,31 +25,31 @@ https://youtu.be/s4_MZjZC8do
 
 ## 操作方法
 <p align="center">
-  <img src="Assets/Sprite/Control.png" width="700" alt="雷斬ノ刀使">
+  <img src="image/Control.png" width="700" alt="雷斬ノ刀使">
 </p>
 
 ## スキル攻撃
 紫電一閃　R2 + 〇
 </p>
-<img src="gif/warp1.gif" width="450" alt="雷斬ノ刀使">
-<img src="gif/warp2.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/warp1.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/warp2.gif" width="450" alt="雷斬ノ刀使">
 </p>
 
 桜華疾走　R2 + □
 </p>
-<img src="gif/rush.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/rush.gif" width="450" alt="雷斬ノ刀使">
 </p>
 落花ノ構え　R2 + X
 </p>
-<img src="gif/fall.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/fall.gif" width="450" alt="雷斬ノ刀使">
 </p>
 千雷刃　R2 + △
 </p>
-<img src="gif/cut.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/cut.gif" width="450" alt="雷斬ノ刀使">
 </p>
 受け流し R1
 </p>
-<img src="gif/parry.gif" width="450" alt="雷斬ノ刀使">
+<img src="image/parry.gif" width="450" alt="雷斬ノ刀使">
 </p>
 
 
