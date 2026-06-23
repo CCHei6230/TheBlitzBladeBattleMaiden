@@ -1,10 +1,10 @@
 # 雷斬ノ刀使
 
-Unity  で個人開発した3Dアクション
-
 <p align="center">
   <img src="image/LOGO.png" width="700" alt="雷斬ノ刀使">
 </p>
+
+> ※ 本リポジトリはコード閲覧用です（C# スクリプトのみを公開）。
 
 | | |
 |---|---|
@@ -79,7 +79,6 @@ https://youtu.be/s4_MZjZC8do
 ### 4. Animator 脱却（遷移のコード制御）
 状態遷移を State Machine 側で管理するため、Animator Controller では遷移条件を組まない。Animator は「クリップを再生する器」に役割を限定し、遷移は各状態の Enter 時に `Animator.Play()` / `CrossFade()` を呼ぶ方式に統一。遷移ロジックがコード一箇所に集約され、グラフのスパゲッティ化を解消した。
 
-> ※ 本リポジトリはコード閲覧用です（C# スクリプトのみを公開）。
 
 ## 制作者
 
