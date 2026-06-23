@@ -13,7 +13,7 @@ Unity  で個人開発した3Dアクション
 | 開発規模 | 個人開発 |
 | 開発期間 | 2026.1-2026.3 |
 | プラットフォーム | Windows |
-| プレイ | [itch.io](https://nzm6230.itch.io/the-blitz-blade-battle-maiden) |
+| リリース | [itch.io](https://nzm6230.itch.io/the-blitz-blade-battle-maiden) |
 
 ▶️ プレイ動画
 https://youtu.be/s4_MZjZC8do
