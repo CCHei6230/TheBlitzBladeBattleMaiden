@@ -66,7 +66,7 @@ Eflatun.SceneReference
 https://github.com/starikcetin/Eflatun.SceneReference
 
 MK Toon - Stylized Shader
-https://assetstore.unity.com/packages/vfx/shaders/mk-toon-stylized-shader-178415?srsltid=AfmBOorCeIdDog2GbOfePAqS8u79dWM0ap_ZEi2FnTykCrMgYYOtPuxO
+https://assetstore.unity.com/packages/vfx/shaders/mk-toon-stylized-shader-178415
 
 Vefects
 https://assetstore.unity.com/packages/vfx/stylized-fire-urp-355834
