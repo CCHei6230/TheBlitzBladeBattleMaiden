@@ -78,6 +78,8 @@ https://youtu.be/s4_MZjZC8do
 
 ### 4. Animator 脱却（遷移のコード制御）
 状態遷移を State Machine 側で管理するため、Animator Controller では遷移条件を組まない。Animator は「クリップを再生する器」に役割を限定し、遷移は各状態の Enter 時に `Animator.Play()` / `CrossFade()` を呼ぶ方式に統一。遷移ロジックがコード一箇所に集約され、グラフのスパゲッティ化を解消した。
+
+
 <img src="image/graph2.png" width="300" alt="雷斬ノ刀使">
 <img src="image/graph1.png" width="300" alt="雷斬ノ刀使">
 </p>
